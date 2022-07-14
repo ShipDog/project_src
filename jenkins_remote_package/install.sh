@@ -20,3 +20,8 @@ sudo yum install -y docker;
 sudo systemctl enable docker;
 sudo systemctl start docker;
 sudo usermod -aG docker jenkins;
+sudo usermod -aG docker ec2-user;
+
+# docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-Linux-x86_64" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
